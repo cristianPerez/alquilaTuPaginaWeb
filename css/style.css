@@ -83,6 +83,7 @@ a:focus {
 }
 
 .nav.navbar-nav {
+    -webkit-border-radius: 25px;
     background-color: rgba(255,255,255,.4);
 }
 
@@ -142,12 +143,16 @@ a:focus {
 .navbar-custom .nav li.active {
     outline: 0;
     background-color: rgba(255,255,255,.2);
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
     background-color: rgba(255,255,255,.2);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
 }
 
 .navbar-toggle {
@@ -332,7 +337,7 @@ hr {
 .intro .slogan h2 {
 	color: #FFF;
 	text-shadow: none;
-	font-size: 60px;
+	font-size: 40px;
 	line-height: 60px;
 	font-weight: 700;
 	font-family: Montserrat, sans-serif;
@@ -641,7 +646,7 @@ Parallax
 }
 
 @-webkit-keyframes pulse {    
-    0 {
+    0%{
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -658,7 +663,7 @@ Parallax
 }
 
 @-moz-keyframes pulse {    
-    0 {
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -764,7 +769,6 @@ Parallax
 
 	
 }
-
 @media (max-width:480px) {
 
 	.navbar-custom .nav.navbar-nav {
@@ -798,12 +802,21 @@ Parallax
     border-radius: 25px;
     border: 1px solid #FFF;
     padding: 5px;
+    padding-left: 25px;
     min-width: 300px;
     background: rgba(255,255,255,0.1);
     color: white;
     font-family: bold;
     margin: 5px;
+    font-family: Montserrat, sans-serif;
 }
+
+
+.inputForm:focus
+  {
+  color: #FFF;
+  background: rgba(255,255,255,0.4);
+  }
 
 .buttonAqui{
   position: relative;
@@ -830,6 +843,61 @@ Parallax
 position: absolute;
 top: -12px;
 right: -16px;
-font-size: 33px
+font-size: 33px;
+color: white;
 
 }
+
+
+.btnNew{
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  padding: 5px;
+  border-radius: 50px;
+  background: #19d27d;
+  border: 2px solid transparent;
+  min-width: 300px;
+  -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  
+}
+
+.btnNew:hover{
+    
+   background: #FE495A;
+   opacity: 0.8; 
+   
+}
+
+.btnNew2{
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  padding: 5px;
+  border-radius: 50px;
+  background: #fff;
+  border: 2px solid transparent;
+  -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  
+}
+
+.btnNew2:hover{
+    
+   background: #19d27d;
+   opacity: 0.8; 
+   color: white;
+   
+}
+

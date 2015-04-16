@@ -7,11 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Alquila</title>
+    <title>Alquila tu pagina web</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
     <!-- Fonts -->
@@ -19,8 +18,12 @@
 	<link href="css/animate.css" rel="stylesheet" />
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
-	<link href="color/default.css" rel="stylesheet">
-
+    <link href="color/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/snap.svg-min.js"></script>
+    
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -45,8 +48,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#intro">Inicio</a></li>
 		<li><a href="#service">Servicios</a></li>
-		<li><a href="#contact">Contacto</a></li>
 		<li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
         <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -67,11 +70,11 @@
 	
 		<div class="slogan">
 			<h2>Alquila tu pagina web</h2>
-			<h4>Podras encontrar tu pagina ideal desde $40.000 pesos mensuales</h4>
+			<h4>Encontraras tu pagina ideal desde $40.000 pesos mensuales</h4>
 			<form>
-				    <input class="inputForm" type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre"/>
-				    <input class="inputForm" type="email" class="form-control" id="exampleInputEmail1" placeholder="Dejanos tu email">
-  					<button type="submit" class="buttonAqui"><i class="fa fa-pencil	pensil2"></i>  Registrate Aqui</button>
+				    <input class="inputForm" type="text" id="exampleInputPassword1" placeholder="Nombre"/>
+				    <input class="inputForm" type="email" id="exampleInputEmail1" placeholder="Dejanos tu email">
+  					<button type="submit" class="btnNew"><i class="fa fa-pencil pensil2"></i>  Registrate Aqui</button>
 			</form>
 		</div>
 		<div class="page-scroll">
@@ -81,9 +84,84 @@
 		</div>
     </section>
 	<!-- /Section: intro -->
-	
 
-	<!-- Section: services -->
+        <section id="service" class="home-section "> 
+            <div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2>Nuestros servícios</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+    </div>
+    <div class="container">
+			<!-- Top Navigation -->
+			<header class="codrops-header">
+			
+			</header>
+			<section id="grid" class="grid clearfix">
+				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/2.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Página Web</h2>
+							<p>Parametrizada inicialmente por ti.</p>
+                                                        <button class="btnNew2">Ver</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/4.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Página Web Administrable</h2>
+							<p>Permite realizar modificaciones sobre el contenido y estructura del sitio web.</p>
+							<button class="btnNew2">Ver</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/6.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Página Web Especializadas</h2>
+							<p>Software web especifico para tus requerimientos.</p>
+							<button class="btnNew2">Ver</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+					<figure>
+						<img src="img/8.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+						<figcaption>
+							<h2>Landing Page</h2>
+							<p>Padra mostrar de manera dinamica el valor agregado que tu servicio ofrece.</p>
+							<button class="btnNew2">Ver</button>
+						</figcaption>
+					</figure>
+				</a>
+				
+				
+				
+			</section>
+		</div><!-- /container -->
+                </section>   
+		
+
+        <!-- Services mutantes -->
+        
+        
+	<!-- Section: services --><!--
     <section id="service" class="home-section text-center bg-gray">
 		
 		<div class="heading-about">
@@ -162,7 +240,7 @@
             </div>
         </div>		
 		</div>
-	</section>
+	</section>-->
 	<!-- /Section: services -->
 	
 
@@ -174,7 +252,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
-					<h2>About us</h2>
+					<h2>Acerca de nosotros</h2>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
@@ -195,7 +273,7 @@
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Anna Hanaceck</h5>
+			<h5>Anna Hanaceck</h5>
                         <p class="subtitle">Pixel Crafter</p>
                         <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
                     </div>
@@ -252,7 +330,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
-					<h2>Get in touch</h2>
+					<h2>Contáctanos</h2>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
@@ -276,39 +354,40 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Deja tu nombre" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
-                                Email Address</label>
+                                Email</label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                <input type="email" class="form-control" id="email" placeholder="deja tu email" required="required" /></div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
-                                Subject</label>
+                                Asunto</label>
                             <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
+                                <option value="na" selected="">Selecciona uno:</option>
+                                <option value="web">Página Web</option>
+                                <option value="web administrable">Página Web Administrable</option>
+                                <option value="web especializada">Página Web Especializada</option>
+                                <option value="web landing">Landing Page</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Message</label>
+                                Mensaje</label>
                             <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Message"></textarea>
+                                placeholder="Mensaje"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                            Send Message</button>
+                        <button type="submit" class="btnNew" id="btnContactUs">
+                            Enviar Mensaje</button>
                     </div>
                 </div>
                 </form>
@@ -317,27 +396,26 @@
 		
 		<div class="col-lg-4">
 			<div class="widget-contact">
-				<h5>Main Office</h5>
+				<h5>Oficina principal</h5>
 				
 				<address>
-				  <strong>Squas Design, Inc.</strong><br>
-				  Tower 795 Folsom Ave, Beautiful Suite 600<br>
-				  San Francisco, CA 94107<br>
-				  <abbr title="Phone">P:</abbr> (123) 456-7890
+				  <strong>Alquila tu pagina web s.a.s</strong><br>
+				  <br>
+				  Manizales, CO 170001<br>
+				  <abbr title="Telefono"></abbr> (+57) 3016956032
 				</address>
-
 				<address>
 				  <strong>Email</strong><br>
-				  <a href="mailto:#">email.name@example.com</a>
+                                  <a href="mailto:#" style="color: #000">contacto@alquilatupaginaweb.com</a>
 				</address>	
 				<address>
-				  <strong>We're on social networks</strong><br>
-                       	<ul class="company-social">
-                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>	
+				  <strong>Estamos en redes sociales</strong><br>
+                                    <ul class="company-social">
+                                        <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                        <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>	
 				</address>					
 			
 			</div>	
@@ -359,7 +437,7 @@
 						</a>
 					</div>
 					</div>
-					<p>&copy;Copyright 2014 - Squad. All rights reserved.</p>
+					<p>&copy;Copyright 2015 - Alquila tu pagina web. Todos los derechos recervados.</p>
 				</div>
 			</div>	
 		</div>
@@ -373,6 +451,35 @@
 	<script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
+    
+    <script>
+			(function() {
+	
+				function init() {
+					var speed = 330,
+						easing = mina.backout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>    
 
 </body>
 
