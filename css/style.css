@@ -72,8 +72,8 @@ a:focus {
   line-height: 1em;
 }
 
-.navbar-brand h1{
-	color: #fff;
+.navbar-brand img{
+	width: 120px;
   font-size: 20px;
   line-height: 40px;
 }
@@ -84,6 +84,8 @@ a:focus {
 
 .nav.navbar-nav {
     border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
     background-color: rgba(255,255,255,.4);
 }
 
@@ -800,6 +802,7 @@ Parallax
 
 
 
+
 /* Style personalized */
 .inputForm{
     -moz-border-radius: 25px;
@@ -863,7 +866,7 @@ color: white;
   letter-spacing: 0.17em;
   padding: 5px;
   border-radius: 50px;
-  background: #19d27d;
+  background: #12A19A;
   border: 2px solid transparent;
   min-width: 300px;
   -webkit-transition: all .4s ease-in-out;
@@ -899,7 +902,7 @@ color: white;
 
 .btnNew2:hover{
     
-   background: #19d27d;
+   background: #12A19A
    opacity: 0.8; 
    color: white;
    
@@ -910,5 +913,5 @@ color: white;
 .texto-precio{
   font-size: 70px;
   display: inline-block;
-  color: #19D27D;
+  color: #12A19A;
 }

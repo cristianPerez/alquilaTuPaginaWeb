@@ -1,483 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Alquila tu pagina web | De vuelta</title>
+        <title>Alquila tu pagina web</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="css/animate.css" rel="stylesheet" />
-    <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/snap.svg-min.js"></script>
-    
-</head>
+        <!-- Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" />
+        <!-- Squad theme CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/styleInformacion.css" rel="stylesheet">
+        <link href="color/default.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/snap.svg-min.js"></script>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-	<!-- Preloader -->
-	<div id="preloader">
-	  <div id="load"></div>
-	</div>
+    </head>
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <h1>Alquilatupaginaweb.com</h1>
-                </a>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="load"></div>
+        </div>
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo-alquila.png" />
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#intro">Inicio</a></li>
+                        <li><a href="#service">Servicios</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
+            <!-- /.container -->
+        </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro">Inicio</a></li>
-		<li><a href="#service">Servicios</a></li>
-		<li><a href="#about">Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-        <!--<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
-          </ul>
-        </li>-->
-      </ul>
+        <!-- Section: intro -->
+        <section id="intro" class="intro">
+
+            <div class="slogan">
+                <h2>Alquila tu pagina web</h2>
+                <h4><div class="texto-pagina">Encontraras tu pagina ideal desde </div><div class='texto-pagina'> <div class="texto-precio">$40.000</div> pesos mensuales</div></h4>
+                <form method="GET" action="javascript:guardarContacto()">
+                    <input class="inputForm" type="text" id="nombre" placeholder="Nombre" required=""/>
+                    <input class="inputForm" type="email" id="email" placeholder="Dejanos tu email" required="">
+                    <button type="submit" class="btnNew" role="button"  data-toggle="modal"><i class="fa fa-pencil pensil2" ></i>Registrate Aqui</button>
+                    <p id="loader"><img  src="img/spinner.gif"/></p>
+                </form>
+                <div id="notificaciones" data-notify="progressbar" class="alert alertSuccess alert-dismissible notificacion1" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 id="titleAlert">Bien!</h3><h4 id="contetAlert">Te escribiremos en breve.</h4>
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+		
+            <div class="page-scroll">
+                <a href="#service" class="btn btn-circle">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </section>
+        <!-- /Section: intro -->
 
-	<!-- Section: intro -->
-    <section id="intro" class="intro">
-	
-		<div class="slogan">
-			<h2>Alquila tu pagina web</h2>
-			<h4><div class="texto-pagina">Encontraras tu pagina ideal desde </div><div class='texto-pagina'> <div class="texto-precio">$40.000</div> pesos mensuales</div></h4>
-			<form>
-				    <input class="inputForm" type="text" id="exampleInputPassword1" placeholder="Nombre" required/>
-				    <input class="inputForm" type="email" id="exampleInputEmail1" placeholder="Dejanos tu email" required>
-  					<button type="submit" class="btnNew"><i class="fa fa-pencil pensil2"></i>  Registrate Aqui</button>
-			</form>
-		</div>
-		<div class="page-scroll">
-			<a href="#service" class="btn btn-circle">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-		</div>
-    </section>
-	<!-- /Section: intro -->
 
         <section id="service" class="home-section "> 
             <div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>Nuestros servícios</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-    </div>
-    <div class="container">
-			<!-- Top Navigation -->
-			<section id="grid" class="grid clearfix">
-				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure>
-						<img src="img/2.png" />
-						<svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-						<figcaption>
-							<h2>Página Web</h2>
-							<p>Elige los modulos. Nosotros le creamos la página web.</p>
-                            <button class="btnNew2">Ver mas...</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure>
-						<img src="img/4.png" />
-						<svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-						<figcaption>
-							<h2>Página Web Administrable</h2>
-							<p>Elige los modulos. Nosotros le creamos la página web. Modificas el contenido de su página en el momento que deseas.</p>
-							<button class="btnNew2">Ver mas...</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure>
-						<img src="img/6.png" />
-						<svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-						<figcaption>
-							<h2>Página Web Especializadas</h2>
-							<p>Te creamos tu página web con las necesidades requeridas de su negocio.</p>
-							<button class="btnNew2">Ver mas...</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure>
-						<img src="img/8.png" />
-						<svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-						<figcaption>
-							<h2>Landing Page</h2>
-							<p>Padra mostrar de manera dinamica el valor agregado que tu servicio ofrece.</p>
-							<button class="btnNew2">Ver mas...</button>
-						</figcaption>
-					</figure>
-				</a>
-				
-				
-				
-			</section>
-		</div><!-- /container -->
-                </section>   
-		
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Nuestros servícios</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Top Navigation -->
+                <section id="grid" class="grid clearfix">
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="img/2.png" />
+                            <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Página Web</h2>
+                                <p>Elige los modulos. Nosotros te creamos la página web.</p>
+                                <button class="btnNew2">Ver mas...</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="img/4.png" />
+                            <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Página Web Administrable</h2>
+                                <p>Elige los modulos. Nosotros te creamos la página web. Modificas el contenido de tu página en el momento que deseas.</p>
+                                <button class="btnNew2">Ver mas...</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="img/6.png" />
+                            <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Página Web Especializadas</h2>
+                                <p>Te creamos tu página web con las necesidades requeridas por tu negocio.</p>
+                                <button class="btnNew2">Ver mas...</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="img/8.png" />
+                            <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                            <figcaption>
+                                <h2>Landing Page</h2>
+                                <p>Padras mostrar de manera dinamica el valor agregado que tus servicios.</p>
+                                <button class="btnNew2">Ver mas...</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </section>
+            </div><!-- /container -->
+        </section>   
+
 
         <!-- Services mutantes -->
-        
-        
-	<!-- Section: services --><!--
-    <section id="service" class="home-section text-center bg-gray">
-		
-		<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>Our Services</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
 
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
+
+        <!-- Section: services --><!--
+    <section id="service" class="home-section text-center bg-gray">
+                
+                <div class="heading-about">
+                        <div class="container">
+                        <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                        <div class="section-heading">
+                                        <h2>Our Services</h2>
+                                        <i class="fa fa-2x fa-angle-down"></i>
+
+                                        </div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="col-lg-2 col-lg-offset-5">
+                                <hr class="marginbot-50">
+                        </div>
+                </div>
         <div class="row">
             <div class="col-sm-3 col-md-3">
-				<div class="wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="service-box">
-					<div class="service-icon">
-						<img src="img/icons/service-icon-1.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Print</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-					</div>
+                                        <div class="service-icon">
+                                                <img src="img/icons/service-icon-1.png" alt="" />
+                                        </div>
+                                        <div class="service-desc">
+                                                <h5>Print</h5>
+                                                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                                        </div>
                 </div>
-				</div>
+                                </div>
             </div>
-			<div class="col-sm-3 col-md-3">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-sm-3 col-md-3">
+                                <div class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="service-box">
-					<div class="service-icon">
-						<img src="img/icons/service-icon-2.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Web Design</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-					</div>
+                                        <div class="service-icon">
+                                                <img src="img/icons/service-icon-2.png" alt="" />
+                                        </div>
+                                        <div class="service-desc">
+                                                <h5>Web Design</h5>
+                                                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                                        </div>
                 </div>
-				</div>
+                                </div>
             </div>
-			<div class="col-sm-3 col-md-3">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-sm-3 col-md-3">
+                                <div class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="service-box">
-					<div class="service-icon">
-						<img src="img/icons/service-icon-3.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Photography</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-					</div>
+                                        <div class="service-icon">
+                                                <img src="img/icons/service-icon-3.png" alt="" />
+                                        </div>
+                                        <div class="service-desc">
+                                                <h5>Photography</h5>
+                                                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                                        </div>
                 </div>
-				</div>
+                                </div>
             </div>
-			<div class="col-sm-3 col-md-3">
-				<div class="wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="col-sm-3 col-md-3">
+                                <div class="wow fadeInRight" data-wow-delay="0.2s">
                 <div class="service-box">
-					<div class="service-icon">
-						<img src="img/icons/service-icon-4.png" alt="" />
-					</div>
-					<div class="service-desc">
-						<h5>Cloud System</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-					</div>
+                                        <div class="service-icon">
+                                                <img src="img/icons/service-icon-4.png" alt="" />
+                                        </div>
+                                        <div class="service-desc">
+                                                <h5>Cloud System</h5>
+                                                <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                                        </div>
                 </div>
-				</div>
+                                </div>
             </div>
         </div>		
-		</div>
-	</section>-->
-	<!-- /Section: services -->
-	
+                </div>
+        </section>-->
+        <!-- /Section: services -->
 
-	<!-- Section: about -->
-    <section id="about" class="home-section text-center">
-		<div class="heading-about">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>Acerca de nosotros</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
 
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
+        <!-- Section: about -->
+        <section id="about" class="home-section text-center">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Acerca de nosotros</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
 
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="0.2s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-			<h5>Carlos Ariel Castaño Londoño</h5>
-                        <p class="subtitle">Pixel Crafter</p>
-                        <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-				</div>
             </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="0.5s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Fabian Orrego Giraldo</h5>
-                        <p class="subtitle">Ruby on Rails</p>
-                        <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
+            <div class="container">
 
-                    </div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="0.8s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Cristian Camilo Pérez Cardona</h5>
-                        <p class="subtitle">jQuery Ninja</p>
-                        <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
-
-                    </div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow bounceInUp" data-wow-delay="1s">
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>John Alexander Agudelo Galeano</h5>
-                        <p class="subtitle">Typographer</p>
-                        <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
-
-                    </div>
-                </div>
-				</div>
-            </div>
-        </div>		
-		</div>
-	</section>
-	<!-- /Section: about -->
-	
-
-	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
-		<div class="heading-contact">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>Contáctanos</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
-
-					</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
-
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="boxed-grey">
-                <form id="contact-form">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                Nombre</label>
-                            <input type="text" class="form-control" id="name" placeholder="Deja tu nombre" required="required" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">
-                                Email</label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="email" class="form-control" id="email" placeholder="deja tu email" required="required" /></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">
-                                Asunto</label>
-                            <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Selecciona uno:</option>
-                                <option value="web">Página Web</option>
-                                <option value="web administrable">Página Web Administrable</option>
-                                <option value="web especializada">Página Web Especializada</option>
-                                <option value="web landing">Landing Page</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                Mensaje</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Mensaje"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="submit" class="btnNew" id="btnContactUs">
-                            Enviar Mensaje</button>
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
                     </div>
                 </div>
-                </form>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <h5>Carlos Ariel Castaño Londoño</h5>
+                                    <p class="subtitle">Pixel Crafter</p>
+                                    <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.5s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <h5>Fabian Orrego Giraldo</h5>
+                                    <p class="subtitle">Ruby on Rails</p>
+                                    <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.8s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <h5>Cristian Camilo Pérez Cardona</h5>
+                                    <p class="subtitle">jQuery Ninja</p>
+                                    <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="1s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <h5>John Alexander Agudelo Galeano</h5>
+                                    <p class="subtitle">Typographer</p>
+                                    <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>		
+            </div>
+        </section>
+        <!-- /Section: about -->
+
+
+        <!-- Section: contact -->
+        <section id="contact" class="home-section text-center">
+            <div class="heading-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Contáctanos</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="boxed-grey">
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Nombre</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Deja tu nombre" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">
+                                                Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="email" class="form-control" id="email" placeholder="deja tu email" required="required" /></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject">
+                                                Asunto</label>
+                                            <select id="subject" name="subject" class="form-control" required="required">
+                                                <option value="na" selected="">Selecciona uno:</option>
+                                                <option value="web">Página Web</option>
+                                                <option value="web administrable">Página Web Administrable</option>
+                                                <option value="web especializada">Página Web Especializada</option>
+                                                <option value="web landing">Landing Page</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Mensaje</label>
+                                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                                      placeholder="Mensaje"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btnNew" id="btnContactUs">
+                                            Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="widget-contact">
+                            <h5>Oficina principal</h5>
+
+                            <address>
+                                <strong>Alquila tu pagina web s.a.s</strong><br>
+                                <br>
+                                Manizales, CO 170001<br>
+                                <abbr title="Telefono"></abbr> (+57) 3016956032
+                            </address>
+                            <address>
+                                <strong>Email</strong><br>
+                                <a href="mailto:#" style="color: #000">contacto@alquilatupaginaweb.com</a>
+                            </address>	
+                            <address>
+                                <strong>Estamos en redes sociales</strong><br>
+                                <ul class="company-social">
+                                    <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                    <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>	
+                            </address>					
+
+                        </div>	
+                    </div>
+                </div>	
+
+            </div>
+        </section>
+        <!-- /Section: contact -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="wow shake" data-wow-delay="0.4s">
+                            <div class="page-scroll marginbot-30">
+                                <a href="#intro" id="totop" class="btn btn-circle">
+                                    <i class="fa fa-angle-double-up animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>&copy;Copyright 2015 - Alquila tu pagina web. Todos los derechos recervados.</p>
+                    </div>
+                </div>	
             </div>
         </div>
 		
-		<div class="col-lg-4">
-			<div class="widget-contact">
-				<h5>Oficina principal</h5>
-				
-				<address>
-				  <strong>Alquila tu pagina web s.a.s</strong><br>
-				  <br>
-				  Manizales, CO<br>
-				  <abbr title="Telefono"></abbr> (+57) 3016956032
-				</address>
-				<address>
-				  <strong>Email</strong><br>
-                                  <a href="mailto:#" style="color: #000">contacto@alquilatupaginaweb.com</a>
-				</address>	
-				<address>
-				  <strong>Estamos en redes sociales</strong><br>
-                                    <ul class="company-social">
-                                        <li class="social-facebook"><a href="https://www.facebook.com/pages/Alquila-T%C3%BA-Pagina-Web/1401637196811413" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                                        <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>	
-				</address>					
-			
-			</div>	
-		</div>
-    </div>	
-
-		</div>
+	
 	</section>
 	<!-- /Section: contact -->
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<div class="wow shake" data-wow-delay="0.4s">
-					<div class="page-scroll marginbot-30">
-						<a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up animated"></i>
-						</a>
-					</div>
-					</div>
-					<p>&copy;Copyright 2015 - Alquila tu pagina web. Todos los derechos recervados.</p>
-				</div>
-			</div>	
-		</div>
-	</footer>
+        </footer>
 
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-    
-    <script>
-			(function() {
-	
-				function init() {
-					var speed = 330,
-						easing = mina.backout;
+        <!-- Core JavaScript Files -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>	
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/wow.min.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/custom.js"></script>
+        <script src="js/guardarInformacion.js"></script>
 
-					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
-						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
-							pathConfig = {
-								from : path.attr( 'd' ),
-								to : el.getAttribute( 'data-path-hover' )
-							};
+        <script>
+            (function () {
 
-						el.addEventListener( 'mouseenter', function() {
-							path.animate( { 'path' : pathConfig.to }, speed, easing );
-						} );
+                function init() {
+                    var speed = 330,
+                            easing = mina.backout;
 
-						el.addEventListener( 'mouseleave', function() {
-							path.animate( { 'path' : pathConfig.from }, speed, easing );
-						} );
-					} );
-				}
+                    [].slice.call(document.querySelectorAll('#grid > a')).forEach(function (el) {
+                        var s = Snap(el.querySelector('svg')), path = s.select('path'),
+                                pathConfig = {
+                                    from: path.attr('d'),
+                                    to: el.getAttribute('data-path-hover')
+                                };
 
-				init();
+                        el.addEventListener('mouseenter', function () {
+                            path.animate({'path': pathConfig.to}, speed, easing);
+                        });
 
-			})();
-		</script>    
+                        el.addEventListener('mouseleave', function () {
+                            path.animate({'path': pathConfig.from}, speed, easing);
+                        });
+                    });
+                }
 
-</body>
+                init();
+
+            })();
+        </script>    
+
+    </body>
+
 
 </html>
