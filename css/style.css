@@ -934,4 +934,8 @@ color: white;
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color:    #FFF;
 }
+.img-servicios{
+  width: 100px;
+  margin: 2em 0 2em 0;
+}
 
