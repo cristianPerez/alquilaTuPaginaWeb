@@ -23,7 +23,9 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/componentclientes.css" />
         <script src="js/snap.svg-min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
 
     </head>
 
@@ -50,6 +52,7 @@
                         <li class="active"><a href="#intro">Inicio</a></li>
                         <li><a href="#service">Servicios</a></li>
                         <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -322,6 +325,53 @@
         <!-- /Section: about -->
 
 
+        <!-- Section: clientes -->
+        <section id="clientes" class="home-section text-center">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Nuestros Clientes</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="main">
+                <ul id="og-grid" class="og-grid">
+                    <li>
+                        <a href="" data-largesrc="img/1.jpg" data-title="Sidman Colombia" data-description="SIDMAN S.A.S. Es una firma localizada en Colombia conformada por profesionales y técnicos en diferentes áreas, facilitamos a las empresas productos y servicios orientados a fortalecer su entorno productivo, a través de la implementación de programas en los sistemas de gestión, como el dispositivo que lleve a cohesionar la seguridad, salud laboral,  el medio ambiente, la calidad y la productividad">
+                            <img src="img/thumbs/1.jpg" alt="Sidman"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://fundacionreydavid.org/" data-largesrc="img/2.jpg" data-title="Fundación Rey David" data-description="FUNDACIÓN PARA HEMOFILICOS REY DAVID es una empresa dedicada al manejo integral de los  pacientes con hemofilia y con otras patologías como la enfermedad de Von Willebrand, mediante  programas evaluación, atención y seguimiento con enfoque digestión de riesgo">
+                            <img src="img/thumbs/2.jpg" alt="Fundacion"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-largesrc="img/3.jpg" data-title="Inversiones Inmobiliarias Adriana Ordoñez" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                            <img src="img/thumbs/3.jpg" alt="Inmobiliaria"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-largesrc="img/4.jpg" data-title="Akaro" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <img src="img/thumbs/4.jpg" alt="img01"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <!-- /Section: about -->
+
         <!-- Section: contact -->
         <section id="contact" class="home-section text-center">
             <div class="heading-contact">
@@ -451,7 +501,7 @@
 	</section>
 	<!-- /Section: contact -->
 
-    <!-- Modal -->
+    <!-- Modal servicios-->
 
     <div class="modal fade pagina-web" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -488,7 +538,7 @@
     </div>
   </div>
 </div>
-
+ <!-- end Modal servicios-->
 
         </footer>
 
@@ -501,7 +551,12 @@
         <!-- Custom Theme JavaScript -->
         <script src="js/custom.js"></script>
         <script src="js/guardarInformacion.js"></script>
-
+        <script src="js/grid.js"></script>
+        <script>
+            $(function() {
+                Grid.init();
+            });
+        </script>
         <script>
             (function () {
 
