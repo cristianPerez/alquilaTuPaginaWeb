@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 30px;
+    margin: 0 0 0px;
     text-transform: uppercase;
     font-family: Montserrat,sans-serif;
     font-weight: 700;
@@ -83,7 +83,7 @@ a:focus {
 }
 
 .nav.navbar-nav {
-    -webkit-border-radius: 25px;
+    border-radius: 25px;
     background-color: rgba(255,255,255,.4);
 }
 
@@ -153,6 +153,7 @@ a:focus {
     background-color: rgba(255,255,255,.2);
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
+    border-radius: 25px;
 }
 
 .navbar-toggle {
@@ -314,7 +315,7 @@ hr {
 }
 
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:15% 0 0 0;
 }
 
 .intro .slogan {
@@ -337,7 +338,7 @@ hr {
 .intro .slogan h2 {
 	color: #FFF;
 	text-shadow: none;
-	font-size: 40px;
+	font-size: 70px;
 	line-height: 60px;
 	font-weight: 700;
 	font-family: Montserrat, sans-serif;
@@ -353,6 +354,8 @@ hr {
 .intro .slogan h4 {
 	color: #fff;
 	text-shadow: -1px 1px 1px #000;
+  font-size: 35px;
+  margin-bottom: 1em;
 }
 
 
@@ -799,6 +802,7 @@ Parallax
 
 /* Style personalized */
 .inputForm{
+    -moz-border-radius: 25px;
     border-radius: 25px;
     border: 1px solid #FFF;
     padding: 5px;
@@ -900,4 +904,11 @@ color: white;
    color: white;
    
 }
-
+.texto-pagina{
+  display: block;
+}
+.texto-precio{
+  font-size: 70px;
+  display: inline-block;
+  color: #19D27D;
+}
