@@ -1,4 +1,4 @@
-#loader{
+#loader,#loader2{
     
     margin-top: 20px;
     display: none;
@@ -28,12 +28,12 @@
 
 .notificacion3 {
     margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px;
-    width: 200px;
-    height: 130px;
-    bottom: 10px;
-    right: 200px;
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  height: 80px;
+  top: 99%;
+  right: 10%;
 }
 
 /*ALERTS*/
@@ -55,7 +55,31 @@
     
 }
 
+.alertSuccess2
+{
+    
+  background-color: rgba(18,161,154,0.6);
+  border-color: #d6e9c6;
+  color: #fff;
+    
+}
+
+.alertDanger2
+{
+    
+  background-color: rgba(161,18,18,0.6);
+  border-color: #d6e9c6;
+  color: #fff;
+    
+}
+
 #contetAlert{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px !important;
+}
+
+#modalbackground{
+    
+    background: transparent;
+    
 }
