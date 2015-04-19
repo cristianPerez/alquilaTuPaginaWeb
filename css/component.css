@@ -78,6 +78,8 @@
   transition: opacity 0.3s, transform 0.3s;
   bottom: -80px;
   left: 25%;
+   top: 250px;
+  right: 20px;
 
 }
 
