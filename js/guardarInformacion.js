@@ -16,31 +16,88 @@ function guardarContacto(){
             if(data.respuesta==='si'){
             $('#nombre').val("");
             $('#email').val("");
-                //$("#notificaciones").attr("class", "alert alert-success alert-dismissible notificacion2");
-                //$("#notificaciones").removeClass("notificacion1");
-                //$("#notificaciones").addClass("notificacion2");
-                delayClass();
-                $('#loader').hide();
+            $('#titleAlert').text("Gracias!");
+            $('#contetAlert').text("Te escribiremos en breve");
+            delayClass(1);
+            $('#loader').hide();
+            location.reload();
             }
             else if(data === 'no')
             {
-                //window.alert("ocurrio un problema intentelo de nuevo");
-                window.location.href="http://localhost/alquilaTuPaginaWeb";
-                $("#notificaciones").attr("class", "alert alertSuccess alert-dismissible notificacion2");
-                
+                $('#nombre').val("");
+                $('#email').val("");
+                $('#titleAlert').text("Ups!");
+                $('#contetAlert').text("Algo salio mal intenta de nuevo");
+                delayClass(2);
                 $('#loader').hide();
             }
         },
         error: function(e,es,error) {
-            window.alert("Ocurrio un error intentalo mas tarde");
-            $('#loader').hide();
+                $('#nombre').val("");
+                $('#email').val("");
+                $('#titleAlert').text("Ups!");
+                $('#contetAlert').text("Algo salio mal intenta de nuevo");
+                delayClass(2);
         }
     }
 ); 
         
     }
     else{
-        //window.alert("Hay campos incompletos!!!");
+        $('#loader').hide();
+    }
+    
+
+}
+
+function guardarContacto2(){
+    
+    $('#loader').show("slow");
+    
+    if($('#nombre').val()!=="" && $('#email').val()!=="" ){
+    $.ajax({
+        dataType: "json",
+        data:
+            {
+            "nombre": $('#nombre').val(),
+            "correo": $('#email').val(),
+            "asunto": $('#asunto').val(),
+            "mensaje": $('#mensaje').val(),
+            },
+        type: 'GET',
+        url: "http://localhost/alquilaTuPaginaWeb/Controlador/Fachada.php?clase=GuardarInformacion&metodo=registrarContacto2",
+        success: function(data) {
+            if(data.respuesta==='si'){
+            $('#nombre').val("");
+            $('#email').val("");
+            $('#titleAlert').text("Gracias!");
+            $('#contetAlert').text("Te escribiremos en breve");
+            delayClass(1);
+            $('#loader').hide();
+            location.reload();
+            }
+            else if(data === 'no')
+            {
+                $('#nombre').val("");
+                $('#email').val("");
+                $('#titleAlert').text("Ups!");
+                $('#contetAlert').text("Algo salio mal intenta de nuevo");
+                delayClass(2);
+                $('#loader').hide();
+            }
+        },
+        error: function(e,es,error) {
+                $('#nombre').val("");
+                $('#email').val("");
+                $('#titleAlert').text("Ups!");
+                $('#contetAlert').text("Algo salio mal intenta de nuevo");
+                delayClass(2);
+        }
+    }
+); 
+        
+    }
+    else{
         $('#loader').hide();
     }
     
@@ -48,11 +105,14 @@ function guardarContacto(){
 }
 
 
-function delayClass() {
+function delayClass(tipos) {
        $("#notificaciones").fadeIn('slow', function(){
-       $("#notificaciones").addClass("notificacion2");
-}
-)}
+          
+          if(tipos===1)
+            $("#notificaciones").addClass("alert alertSuccess alert-dismissible notificacion2");
+           else if(tipos===2)
+            $("#notificaciones").addClass("alert alertDanger alert-dismissible notificacion2");
+};)}
 
 
 

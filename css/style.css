@@ -802,11 +802,11 @@ Parallax
 
 
 
-
 /* Style personalized */
 .inputForm{
-    -moz-border-radius: 25px;
     border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
     border: 1px solid #FFF;
     padding: 5px;
     padding-left: 25px;
@@ -867,6 +867,7 @@ color: white;
   padding: 5px;
   border-radius: 50px;
   background: #12A19A;
+  //background: #19d27d;
   border: 2px solid transparent;
   min-width: 300px;
   -webkit-transition: all .4s ease-in-out;
@@ -901,12 +902,14 @@ color: white;
 }
 
 .btnNew2:hover{
-    
-   background: #12A19A
+
+   background: #12A19A;
+   //background: #19d27d;
    opacity: 0.8; 
    color: white;
    
 }
+
 .texto-pagina{
   display: block;
 }
@@ -915,3 +918,20 @@ color: white;
   display: inline-block;
   color: #12A19A;
 }
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #FFF;
+}
+

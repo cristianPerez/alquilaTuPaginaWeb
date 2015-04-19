@@ -8,9 +8,9 @@
 .notificacion1 {
         display: none;
         margin-bottom: 0px;
-	position: absolute;
-	bottom: 0px;
-	width: 200px;
+	   position: absolute;
+	   bottom: 0px;
+	   width: 200px;
         height: 160px;
         top: 100px;
         right: 200px;
@@ -21,135 +21,41 @@
 	position: absolute;
 	bottom: 0px;
 	width: 200px;
-        height: 160px;
-        top: 100px;
-        right: 200px;
+    height: 130px;
+    top: 100px;
+    right: 200px;
 }
 
+.notificacion3 {
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 130px;
+    bottom: 10px;
+    right: 200px;
+}
+
+/*ALERTS*/
 .alertSuccess
 {
     
-  background-color: rgba(100,255,200,0.2);
+  background-color: rgba(18,161,154,0.1);
   border-color: #d6e9c6;
   color: #fff;
     
 }
 
-
-.inputForm{
-    border-radius: 25px;
-    border: 1px solid #FFF;
-    padding: 5px;
-    padding-left: 25px;
-    min-width: 300px;
-    background: rgba(255,255,255,0.1);
-    color: white;
-    font-family: bold;
-    margin: 5px;
-    font-family: Montserrat, sans-serif;
-}
-
-
-.inputForm:focus
-  {
-  color: #FFF;
-  background: rgba(255,255,255,0.4);
-  }
-
-.buttonAqui{
-  position: relative;
-    border-radius: 25px;
-    background: #FE495A;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    opacity: 0.8;
-    min-width: 200px;
-    color: white;
-    font-size: 16px;
-    font-family: bold;
-}
-
-.buttonAqui:hover{
-
-  opacity: 0.6;
-
-}
-
-.pensil2{
-
-position: absolute;
-top: -12px;
-right: -16px;
-font-size: 33px;
-color: white;
-
-}
-
-
-.btnNew{
-  position: relative;
-  font-family: Montserrat, sans-serif;
-  color: #FFF;
-  font-size: 12px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.17em;
-  padding: 5px;
-  border-radius: 50px;
-  background: #12A19A;
-  border: 2px solid transparent;
-  min-width: 300px;
-  -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  
-}
-
-.btnNew:hover{
+.alertDanger
+{
     
-   background: #FE495A;
-   opacity: 0.8; 
-   
-}
-
-.btnNew2{
-  position: relative;
-  font-family: Montserrat, sans-serif;
-  color: #000;
-  font-size: 12px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.17em;
-  padding: 5px;
-  border-radius: 50px;
-  background: #fff;
-  border: 2px solid transparent;
-  -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  
-}
-
-.btnNew2:hover{
+  background-color: rgba(161,18,18,0.1);
+  border-color: #d6e9c6;
+  color: #fff;
     
-   background: #12A19A;
-   opacity: 0.8; 
-   color: white;
-   
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #FFF;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #FFF;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #FFF;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    #FFF;
+#contetAlert{
+    margin-top: 20px;
+    font-size: 16px !important;
 }
