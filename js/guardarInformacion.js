@@ -20,7 +20,6 @@ function guardarContacto(){
             $('#contetAlert').text("Te escribiremos en breve");
             delayClass(1);
             $('#loader').hide();
-            location.reload();
             }
             else if(data === 'no')
             {
@@ -29,7 +28,6 @@ function guardarContacto(){
                 $('#titleAlert').text("Ups!");
                 $('#contetAlert').text("Algo salio mal intenta de nuevo");
                 delayClass(2);
-                $('#loader').hide();
             }
         },
         error: function(e,es,error) {
@@ -44,6 +42,9 @@ function guardarContacto(){
         
     }
     else{
+        $('#titleAlert').text("Ups!");
+        $('#contetAlert').text("Completa los campos para poder continuar");
+        delayClass(2);
         $('#loader').hide();
     }
     
@@ -52,15 +53,15 @@ function guardarContacto(){
 
 function guardarContacto2(){
     
-    $('#loader').show("slow");
+    $('#loader2').show("slow");
     
-    if($('#nombre').val()!=="" && $('#email').val()!=="" ){
+    if($('#nombre2').val()!=="" && $('#email2').val()!=="" && $('#asunto').val()!=="na" && $('#mensaje').val()!==""){
     $.ajax({
         dataType: "json",
         data:
             {
-            "nombre": $('#nombre').val(),
-            "correo": $('#email').val(),
+            "nombre": $('#nombre2').val(),
+            "correo": $('#email2').val(),
             "asunto": $('#asunto').val(),
             "mensaje": $('#mensaje').val(),
             },
@@ -68,37 +69,44 @@ function guardarContacto2(){
         url: "http://localhost/alquilaTuPaginaWeb/Controlador/Fachada.php?clase=GuardarInformacion&metodo=registrarContacto2",
         success: function(data) {
             if(data.respuesta==='si'){
-            $('#nombre').val("");
-            $('#email').val("");
-            $('#titleAlert').text("Gracias!");
-            $('#contetAlert').text("Te escribiremos en breve");
-            delayClass(1);
-            $('#loader').hide();
-            location.reload();
+            $('#nombre2').val("");
+            $('#email2').val("");
+            $('#asunto').val("");
+            $('#mensaje').val("");
+            $('#titleAlert2').text("Gracias!");
+            $('#contetAlert2').text("Te escribiremos en breve");
+            delayClass(3);
+            $('#loader2').hide();
             }
             else if(data === 'no')
             {
-                $('#nombre').val("");
-                $('#email').val("");
-                $('#titleAlert').text("Ups!");
-                $('#contetAlert').text("Algo salio mal intenta de nuevo");
-                delayClass(2);
-                $('#loader').hide();
+                $('#nombre2').val("");
+                $('#email2').val("");
+                $('#asunto').val("");
+                $('#mensaje').val("");
+                $('#titleAlert2').text("Ups!");
+                $('#contetAlert2').text("Algo salio mal intenta de nuevo");
+                delayClass(4);
+                $('#loader2').hide();
             }
         },
         error: function(e,es,error) {
-                $('#nombre').val("");
-                $('#email').val("");
-                $('#titleAlert').text("Ups!");
-                $('#contetAlert').text("Algo salio mal intenta de nuevo");
-                delayClass(2);
+                $('#nombre2').val("");
+                $('#email2').val("");
+                $('#asunto').val("");
+                $('#mensaje').val("");
+                $('#titleAlert2').text("Ups!");
+                $('#contetAlert2').text("Algo salio mal intenta de nuevo");
+                delayClass(4);
+                $('#loader2').hide();
         }
     }
 ); 
         
     }
     else{
-        $('#loader').hide();
+        
+        $('#loader2').hide();
     }
     
 
@@ -106,13 +114,26 @@ function guardarContacto2(){
 
 
 function delayClass(tipos) {
-       $("#notificaciones").fadeIn('slow', function(){
-          
+    if(tipos===1 || tipos ===2){
+         $("#notificaciones").fadeIn('slow', function(){
           if(tipos===1)
             $("#notificaciones").addClass("alert alertSuccess alert-dismissible notificacion2");
            else if(tipos===2)
             $("#notificaciones").addClass("alert alertDanger alert-dismissible notificacion2");
-};)}
+            }   
+        )}
+        else if (tipos===3 || tipos ===4){
+        $("#notificaciones2").fadeIn('slow', function(){
+          if(tipos===3)
+            $("#notificaciones2").addClass("alert alertSuccess2 alert-dismissible notificacion3");
+           else if(tipos===4)
+            $("#notificaciones2").addClass("alert alertDanger2 alert-dismissible notificacion3");
+            }   
+        )}
+       
+    }
+    
+      
 
 
 

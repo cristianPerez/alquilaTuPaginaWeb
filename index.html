@@ -73,7 +73,7 @@
                     <button type="submit" class="btnNew" role="button"  data-toggle="modal"><i class="fa fa-pencil pensil2" ></i>Registrate Aqui</button>
                     <p id="loader"><img  src="img/spinner.gif"/></p>
                 </form>
-                <div id="notificaciones" data-notify="progressbar" class="alert alertSuccess alert-dismissible notificacion1" role="alert">
+                <div id="notificaciones" data-notify="progressbar" class="alert alertSuccess2 alert-dismissible notificacion1" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h3 id="titleAlert">Bien!</h3><p id="contetAlert">Te escribiremos en breve.</p>
                 </div>
@@ -399,13 +399,13 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="boxed-grey">
-                            <form id="contact-form">
+                            <form id="contact-form" method="GET" action="javascript:guardarContacto2()">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="name">
                                                 Nombre</label>
-                                            <input type="text" class="form-control" id="nombre" placeholder="Deja tu nombre" required="required" />
+                                            <input type="text" class="form-control" id="nombre2" placeholder="Deja tu nombre" required="required" />
                                         </div>
                                         <div class="form-group">
                                             <label for="email">
@@ -413,7 +413,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                                 </span>
-                                                <input type="email" class="form-control" id="email" placeholder="deja tu email" required="required" /></div>
+                                                <input type="email" class="form-control" id="email2" placeholder="deja tu email" required="required" /></div>
                                         </div>
                                         <div class="form-group">
                                             <label for="subject">
@@ -436,9 +436,9 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="btnNew" id="btnContactUs">
-                                            Enviar Mensaje</button>
+                                        <button type="submit" class="btnNew" id="btnContactUs">Enviar Contacto</button>
                                     </div>
+                                    <p id="loader2"><img  src="img/spinner.gif"/></p>
                                 </div>
                             </form>
                             <div id="notificaciones2" data-notify="progressbar" class="alert alertSuccess alert-dismissible notificacion1" role="alert">
@@ -505,36 +505,36 @@
 
     <div class="modal fade pagina-web" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img src="img/pagina-web.png"  class="img-servicios" alt="" style="width: 1000px;"/>
+    <div id="modalbackground"  >
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="position: absolute;right: 10px;top: 10px;" aria-hidden="true">&times;</span></button>
+        <img src="img/pagina-web.png"  class="img-responsive img-servicios" alt="" style="width: 100%"/>
     </div>
   </div>
 </div>
 
  <div class="modal fade pagina-web-administrable" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img src="img/pagina-web.png"  class="img-servicios" alt="" style="width: 1000px;"/>
+    <div id="modalbackground" >
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="position: absolute;right: 10px;top: 10px;" aria-hidden="true">&times;</span></button>
+        <img src="img/pagina-web.png"  class=" img-responsive img-servicios" alt="" style="width: 100%"/>
     </div>
   </div>
 </div>
 
-<div class="modal fade pagina-web-especializada" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div  class="modal fade pagina-web-especializada" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img src="img/pagina-web.png"  class="img-servicios" alt="" style="width: 1000px;"/>
+    <div id="modalbackground" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="position: absolute;right: 10px;top: 10px;" aria-hidden="true">&times;</span></button>
+        <img src="img/pagina-web.png"  class="img-responsive img-servicios" alt="" style="width: 100%;"/>
     </div>
   </div>
 </div>
 
 <div class="modal fade pagina-web-landing" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img src="img/pagina-web.png"  class="img-servicios" alt="" style="width: 1000px;"/>
+    <div id="modalbackground" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="position: absolute;right: 10px;top: 10px;" aria-hidden="true">&times;</span></button>
+        <img src="img/pagina-web.png"  class="img-responsive img-servicios" alt="" style="width: 100%;"/>
     </div>
   </div>
 </div>
