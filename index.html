@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Alquila tu pagina web</title>
+        <title>Alquila tu página web</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -31,11 +31,12 @@
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         <!-- Preloader -->
+<header>
         <div id="preloader">
             <div id="load"></div>
         </div>
 
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigat navbar-fixed-topon">
             <div class="container">
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -51,8 +52,8 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#intro">Inicio</a></li>
                         <li><a href="#service">Servicios</a></li>
-                        <li><a href="#about">Nosotros</a></li>
                         <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#about">Nosotros</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -60,17 +61,17 @@
             </div>
             <!-- /.container -->
         </nav>
-
+</header>
         <!-- Section: intro -->
         <section id="intro" class="intro">
 
             <div class="slogan">
-                <h2>Alquila tu pagina web</h2>
-                <h4><div class="texto-pagina">Encontraras tu pagina ideal desde </div><div class='texto-pagina'> <div class="texto-precio">$40.000</div> pesos mensuales</div></h4>
-                <form method="GET" action="javascript:guardarContacto()">
+                <h2>Alquila tu página web</h2>
+                <h4><div class="texto-pagina">Encontrarás tu página ideal desde </div><div class='texto-pagina'> <div class="texto-precio">$40.000</div> pesos mensuales</div></h4>
+                <form id="formulario-scroll" method="GET" action="javascript:guardarContacto()">
                     <input class="inputForm" type="text" id="nombre" placeholder="Nombre" required=""/>
-                    <input class="inputForm" type="email" id="email" placeholder="Dejanos tu email" required="">
-                    <button type="submit" class="btnNew" role="button"  data-toggle="modal"><i class="fa fa-pencil pensil2" ></i>Registrate Aqui</button>
+                    <input class="inputForm" type="email" id="email" placeholder="Déjanos tu email" required="">
+                    <button type="submit" class="btnNew" id="btn-mensaje" role="button"  data-toggle="modal"><i class="fa fa-pencil pensil2" ></i>Regístrate Aquí</button>
                     <p id="loader"><img  src="img/spinner.gif"/></p>
                 </form>
                 <div id="notificaciones" data-notify="progressbar" class="alert alertSuccess2 alert-dismissible notificacion1" role="alert">
@@ -81,7 +82,7 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-		
+        
             <div class="page-scroll">
                 <a href="#service" class="btn btn-circle">
                     <i class="fa fa-angle-double-down animated"></i>
@@ -98,7 +99,7 @@
                         <div class="col-lg-8 col-lg-offset-2 text-center">
                             <div class="wow bounceInDown" data-wow-delay="0.4s">
                                 <div class="section-heading">
-                                    <h2>Nuestros servícios</h2>
+                                    <h2>Nuestros servicios</h2>
                                     <i class="fa fa-2x fa-angle-down"></i>
                                 </div>
                             </div>
@@ -115,8 +116,8 @@
                             <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
                             <figcaption>
                                 <h2>Página Web</h2>
-                                <p>Elige los modulos. Nosotros te creamos la página web.</p>
-                                <button type="button" class="btnNew2" data-toggle="modal" data-target=".pagina-web">Ver mas...</button>
+                                <p>Elige los módulos. Nosotros te creamos la página web.</p>
+                                <button type="button" class="btnNew2"  data-toggle="modal" data-target=".pagina-web">Ver más...</button>
                             </figcaption>
                         </figure>
                     </a>
@@ -126,8 +127,8 @@
                             <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
                             <figcaption>
                                 <h2>Página Web Administrable</h2>
-                                <p>Elige los modulos. Nosotros te creamos la página web. Modificas el contenido de tu página en el momento que deseas.</p>
-                                <button class="btnNew2" data-toggle="modal" data-target=".pagina-web-administrable">Ver mas...</button>
+                                <p>Elige los módulos. Nosotros te creamos la página web. Modificas el contenido de tu página en el momento que deseas.</p>
+                                <button class="btnNew2" data-toggle="modal" data-target=".pagina-web-administrable">Ver más...</button>
                             </figcaption>
                         </figure>
                     </a>
@@ -138,7 +139,7 @@
                             <figcaption>
                                 <h2>Página Web Especializadas</h2>
                                 <p>Te creamos tu página web con las necesidades requeridas por tu negocio.</p>
-                                <button class="btnNew2" data-toggle="modal" data-target=".pagina-web-especializada">Ver mas...</button>
+                                <button class="btnNew2" data-toggle="modal" data-target=".pagina-web-especializada">Ver más...</button>
                             </figcaption>
                         </figure>
                     </a>
@@ -148,8 +149,8 @@
                             <svg viewBox="0 0 180 210" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
                             <figcaption>
                                 <h2>Landing Page</h2>
-                                <p>Padras mostrar de manera dinamica el valor agregado de tus servicios.</p>
-                                <button class="btnNew2" data-toggle="modal" data-target=".pagina-web-landing">Ver mas...</button>
+                                <p>Podrás mostrar de manera dinámica el valor agregado de tus servicios.</p>
+                                <button class="btnNew2" data-toggle="modal" data-target=".pagina-web-landing">Ver más...</button>
                             </figcaption>
                         </figure>
                     </a>
@@ -241,13 +242,62 @@
                 </div>
                                 </div>
             </div>
-        </div>		
+        </div>      
                 </div>
         </section>-->
         <!-- /Section: services -->
 
 
-        <!-- Section: about -->
+
+
+        <!-- Section: clientes -->
+        <section id="clientes" class="home-section text-center">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Nuestros Clientes</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="main">
+                <ul id="og-grid" class="og-grid">
+                    <li>
+                        <a href="http://www.alquilatupaginaweb.com/sidman/" data-largesrc="img/1.jpg" data-title="Sidman Colombia" data-description="SIDMAN S.A.S. Es una firma localizada en Colombia conformada por profesionales y técnicos en diferentes áreas, facilitamos a las empresas productos y servicios orientados a fortalecer su entorno productivo, a través de la implementación de programas en los sistemas de gestión, como el dispositivo que lleve a cohesionar la seguridad, salud laboral,  el medio ambiente, la calidad y la productividad">
+                            <img src="img/thumbs/1.jpg" alt="Sidman"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://fundacionreydavid.org/" data-largesrc="img/2.jpg" data-title="Fundación Rey David" data-description="FUNDACIÓN PARA HEMOFILICOS REY DAVID es una empresa dedicada al manejo integral de los  pacientes con hemofilia y con otras patologías como la enfermedad de Von Willebrand, mediante  programas evaluación, atención y seguimiento con enfoque digestión de riesgo">
+                            <img src="img/thumbs/2.jpg" alt="Fundacion"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://inversionesinmobiliariasao.co" data-largesrc="img/3.jpg" data-title="Inversiones Inmobiliarias Adriana Ordoñez" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                            <img src="img/thumbs/3.jpg" alt="Inmobiliaria"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.islaqkaro.com" data-largesrc="img/4.jpg" data-title="Akaro" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                            <img src="img/thumbs/4.jpg" alt="img01"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <!-- /Section: about -->
+
+         <!-- Section: about -->
         <section id="about" class="home-section text-center">
             <div class="heading-about">
                 <div class="container">
@@ -277,7 +327,7 @@
                             <div class="team boxed-grey">
                                 <div class="inner">
                                     <h5>Carlos Ariel Castaño Londoño</h5>
-                                    <p class="subtitle">Pixel Crafter</p>
+                                    <p class="subtitle">Web Developers</p>
                                     <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
                                 </div>
                             </div>
@@ -287,8 +337,8 @@
                         <div class="wow bounceInUp" data-wow-delay="0.5s">
                             <div class="team boxed-grey">
                                 <div class="inner">
-                                    <h5>Fabian Orrego Giraldo</h5>
-                                    <p class="subtitle">Ruby on Rails</p>
+                                    <h5>Fabián Orrego Giraldo</h5>
+                                    <p class="subtitle">Web Developers</p>
                                     <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
 
                                 </div>
@@ -300,7 +350,7 @@
                             <div class="team boxed-grey">
                                 <div class="inner">
                                     <h5>Cristian Camilo Pérez Cardona</h5>
-                                    <p class="subtitle">jQuery Ninja</p>
+                                    <p class="subtitle">Web Developers</p>
                                     <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
 
                                 </div>
@@ -312,62 +362,14 @@
                             <div class="team boxed-grey">
                                 <div class="inner">
                                     <h5>John Alexander Agudelo Galeano</h5>
-                                    <p class="subtitle">Typographer</p>
+                                    <p class="subtitle">Web Developers</p>
                                     <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>		
-            </div>
-        </section>
-        <!-- /Section: about -->
-
-
-        <!-- Section: clientes -->
-        <section id="clientes" class="home-section text-center">
-            <div class="heading-about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                <div class="section-heading">
-                                    <h2>Nuestros Clientes</h2>
-                                    <i class="fa fa-2x fa-angle-down"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-
-                <div class="main">
-                <ul id="og-grid" class="og-grid">
-                    <li>
-                        <a href="" data-largesrc="img/1.jpg" data-title="Sidman Colombia" data-description="SIDMAN S.A.S. Es una firma localizada en Colombia conformada por profesionales y técnicos en diferentes áreas, facilitamos a las empresas productos y servicios orientados a fortalecer su entorno productivo, a través de la implementación de programas en los sistemas de gestión, como el dispositivo que lleve a cohesionar la seguridad, salud laboral,  el medio ambiente, la calidad y la productividad">
-                            <img src="img/thumbs/1.jpg" alt="Sidman"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://fundacionreydavid.org/" data-largesrc="img/2.jpg" data-title="Fundación Rey David" data-description="FUNDACIÓN PARA HEMOFILICOS REY DAVID es una empresa dedicada al manejo integral de los  pacientes con hemofilia y con otras patologías como la enfermedad de Von Willebrand, mediante  programas evaluación, atención y seguimiento con enfoque digestión de riesgo">
-                            <img src="img/thumbs/2.jpg" alt="Fundacion"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" data-largesrc="img/3.jpg" data-title="Inversiones Inmobiliarias Adriana Ordoñez" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                            <img src="img/thumbs/3.jpg" alt="Inmobiliaria"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" data-largesrc="img/4.jpg" data-title="Akaro" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                            <img src="img/thumbs/4.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                </div>      
             </div>
         </section>
         <!-- /Section: about -->
@@ -413,7 +415,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                                 </span>
-                                                <input type="email" class="form-control" id="email2" placeholder="deja tu email" required="required" /></div>
+                                                <input type="email" class="form-control" id="email2" placeholder="Deja tu email" required="required" /></div>
                                         </div>
                                         <div class="form-group">
                                             <label for="subject">
@@ -453,15 +455,15 @@
                             <h5>Oficina principal</h5>
 
                             <address>
-                                <strong>Alquila tu pagina web s.a.s</strong><br>
+                                <strong>Alquila tu página web</strong><br>
                                 <br>
-                                Manizales, CO 170001<br>
+                                Manizales, CO<br>
                                 <abbr title="Telefono"></abbr> (+57) 3016956032
                             </address>
                             <address>
                                 <strong>Email</strong><br>
                                 <a href="mailto:#" style="color: #000">contacto@alquilatupaginaweb.com</a>
-                            </address>	
+                            </address>  
                             <address>
                                 <strong>Estamos en redes sociales</strong><br>
                                 <ul class="company-social">
@@ -469,12 +471,12 @@
                                     <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                     <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
                                     <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>	
-                            </address>					
+                                </ul>   
+                            </address>                  
 
-                        </div>	
+                        </div>  
                     </div>
-                </div>	
+                </div>  
 
             </div>
         </section>
@@ -491,15 +493,15 @@
                                 </a>
                             </div>
                         </div>
-                        <p>&copy;Copyright 2015 - Alquila tu pagina web. Todos los derechos reservados.</p>
+                        <p>&copy;Copyright 2015 - Alquila tu página web. Todos los derechos reservados.</p>
                     </div>
-                </div>	
+                </div>  
             </div>
         </div>
-		
-	
-	</section>
-	<!-- /Section: contact -->
+        
+    
+    </section>
+    <!-- /Section: contact -->
 
     <!-- Modal servicios-->
 
@@ -545,13 +547,24 @@
         <!-- Core JavaScript Files -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>	
+        <script src="js/jquery.easing.min.js"></script> 
         <script src="js/jquery.scrollTo.js"></script>
         <script src="js/wow.min.js"></script>
         <!-- Custom Theme JavaScript -->
         <script src="js/custom.js"></script>
         <script src="js/guardarInformacion.js"></script>
         <script src="js/grid.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 400){
+                   $("#formulario-scroll").addClass("form-scroll");
+                   $("#btn-mensaje").html('<i class="fa fa-pencil pensil2" ></i>Enviar');
+               }else{
+                    $("#formulario-scroll").removeClass("form-scroll");
+               }
+            });
+        </script>
         <script>
             $(function() {
                 Grid.init();
@@ -584,7 +597,8 @@
                 init();
 
             })();
-        </script>    
+        </script>   
+        
 
     </body>
 

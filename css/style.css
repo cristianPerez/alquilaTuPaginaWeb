@@ -722,6 +722,23 @@ Parallax
     margin-top: 0;
 }
 
+/*Scroll del formulario de contacto*/
+
+.form-scroll{
+  position: fixed;
+  top: 10px;
+  left: 250px;
+  z-index: 10000;
+}
+.form-scroll .inputForm{
+  width: 180px !important;
+  margin: 2px !important;
+}
+.form-scroll .btnNew{
+  width: 100px !important;
+  background: #FE495A;
+}
+
 
 /* Media queries */
 
@@ -810,7 +827,7 @@ Parallax
     border: 1px solid #FFF;
     padding: 5px;
     padding-left: 25px;
-    min-width: 300px;
+    width: 300px;
     background: rgba(255,255,255,0.1);
     color: white;
     font-family: bold;
@@ -869,7 +886,7 @@ color: white;
   background: #12A19A;
   //background: #19d27d;
   border: 2px solid transparent;
-  min-width: 300px;
+  width: 300px;
   -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
