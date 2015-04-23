@@ -1,21 +1,31 @@
+$(document).ready(function() {
+    var x = Math.floor((Math.random() * 4) + 1);
+    $('#intro').css('background-image', 'url(img/bg' + x + '.jpg)');
+});
+
 function guardarContacto(){
     
     $('#loader').show("slow");
     
     if($('#nombre').val()!=="" && $('#email').val()!==""){
+        
     $.ajax({
         dataType: "json",
         data:
             {
             "nombre": $('#nombre').val(),
             "correo": $('#email').val(),
+            "telefono": $('#telefono').val()
             },
         type: 'GET',
         url: "http://localhost/alquilaTuPaginaWeb/Controlador/Fachada.php?clase=GuardarInformacion&metodo=registrarContacto",
+         //url: "http://alquilatupaginaweb.com/Controlador/Fachada.php?clase=GuardarInformacion&metodo=registrarContacto",
+     
         success: function(data) {
             if(data.respuesta==='si'){
             $('#nombre').val("");
             $('#email').val("");
+             $('#telefono').val("");
             $('#titleAlert').text("Gracias!");
             $('#contetAlert').text("Te escribiremos en breve");
             delayClass(1);
@@ -25,6 +35,7 @@ function guardarContacto(){
             {
                 $('#nombre').val("");
                 $('#email').val("");
+                $('#telefono').val("");
                 $('#titleAlert').text("Ups!");
                 $('#contetAlert').text("Algo salio mal intenta de nuevo");
                 delayClass(2);
@@ -33,6 +44,7 @@ function guardarContacto(){
         error: function(e,es,error) {
                 $('#nombre').val("");
                 $('#email').val("");
+                $('#telefono').val("");
                 $('#titleAlert').text("Ups!");
                 $('#contetAlert').text("Algo salio mal intenta de nuevo");
                 delayClass(2);
@@ -62,15 +74,18 @@ function guardarContacto2(){
             {
             "nombre": $('#nombre2').val(),
             "correo": $('#email2').val(),
+            "telefono": $('#telefono2').val(),
             "asunto": $('#asunto').val(),
             "mensaje": $('#mensaje').val(),
             },
         type: 'GET',
         url: "http://localhost/alquilaTuPaginaWeb/Controlador/Fachada.php?clase=GuardarInformacion&metodo=registrarContacto2",
+        //url: "http://alquilatupaginaweb.com/Controlador/Fachada.php?clase=GuardarInformacion&metodo=registrarContacto2",
         success: function(data) {
             if(data.respuesta==='si'){
             $('#nombre2').val("");
             $('#email2').val("");
+            $('#telefono2').val("");
             $('#asunto').val("");
             $('#mensaje').val("");
             $('#titleAlert2').text("Gracias!");
@@ -82,6 +97,7 @@ function guardarContacto2(){
             {
                 $('#nombre2').val("");
                 $('#email2').val("");
+                $('#telefono2').val("");
                 $('#asunto').val("");
                 $('#mensaje').val("");
                 $('#titleAlert2').text("Ups!");
@@ -93,6 +109,7 @@ function guardarContacto2(){
         error: function(e,es,error) {
                 $('#nombre2').val("");
                 $('#email2').val("");
+                $('#telefono2').val("");
                 $('#asunto').val("");
                 $('#mensaje').val("");
                 $('#titleAlert2').text("Ups!");
@@ -105,7 +122,9 @@ function guardarContacto2(){
         
     }
     else{
-        
+        $('#titleAlert2').text("Ups!");
+        $('#contetAlert2').text("Completa los campos para continuar");
+        delayClass(4)
         $('#loader2').hide();
     }
     
@@ -133,7 +152,5 @@ function delayClass(tipos) {
        
     }
     
-      
-
 
 

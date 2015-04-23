@@ -73,9 +73,7 @@ a:focus {
 }
 
 .navbar-brand img{
-	width: 120px;
-  font-size: 20px;
-  line-height: 40px;
+  width: 220px;
 }
 
 .navbar-brand:focus {
@@ -312,12 +310,11 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	background: url(../img/bg2.jpg);
-  background-size:100% 100%;
+        background-size:100% 100% !important;
 }
 
 #intro.intro {
-	padding:15% 0 0 0;
+	padding:20% 0 0 0;
 }
 
 .intro .slogan {
@@ -327,6 +324,7 @@ hr {
 
 .intro .page-scroll {
 	text-align: center;
+        margin-bottom: 4%;
 }
 
 .brand-heading {
@@ -340,7 +338,7 @@ hr {
 .intro .slogan h2 {
 	color: #FFF;
 	text-shadow: none;
-	font-size: 70px;
+	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
 	font-family: Montserrat, sans-serif;
@@ -356,7 +354,7 @@ hr {
 .intro .slogan h4 {
 	color: #fff;
 	text-shadow: -1px 1px 1px #000;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1em;
 }
 
@@ -811,7 +809,7 @@ Parallax
     padding: 5px;
     padding-left: 25px;
     width: 300px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.3);
     color: white;
     font-family: bold;
     margin: 5px;

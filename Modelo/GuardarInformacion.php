@@ -1,5 +1,5 @@
 <?php
-include_once("./smtp_auth.php");
+include_once("../Conexion/smtp_auth.php");
 include ("../Conexion/Conexion.php");
 
 /**
@@ -13,10 +13,10 @@ class GuardarInformacion {
         
         $nombre = $_REQUEST["nombre"];
         $email = $_REQUEST["correo"];
+        $telefono = $_REQUEST["telefono"];
         
-        $sql = "INSERT INTO `contacto`(`nombre`, `correo`)"
-                . "VALUES ('" . $nombre . "','" . $email . "')"
-                . "ON DUPLICATE KEY UPDATE nombre = '" . $nombre . "';";
+        $sql = "INSERT INTO `contacto`(`nombre`, `correo`, `telefono`)"
+                . "VALUES ('" . $nombre . "','" . $email . "','" . $telefono . "');";
         $conn = new Conexion();
         $conn->conectar();
         try {
@@ -35,7 +35,7 @@ class GuardarInformacion {
         $SMTPclave = "6yhn7ujM";
         $SMTPpuerto = "25";
 
-        $destinatario = "cperez354@gmail.com";
+        $destinatario = "info@alquilatupaginaweb.com";
         $asunto = "Nuevo contacto alquila tu pagina";
         $body = "<html lang='es'>
                     <HEAD>
@@ -45,9 +45,10 @@ class GuardarInformacion {
                             <div>
                             <center>
                             <h1>Contacto Alquila tu pagina</h1>
-                                <img src='http://mitanash.com/images/others/logo.png'/>
+                                <img src='http://www.alquilatupaginaweb.com/img/logo-alquila.png'/>
                                     <p><strong>Contacto a nombre de:</strong> $nombre </p>
                                     <p><strong>Email:</strong> $email</p>
+                                        <p><strong>Telefono:</strong> $telefono</p>
                             </center>
                             </div>
                         </BODY>
@@ -85,13 +86,14 @@ class GuardarInformacion {
                             <div>
                             <center>
                             <h1>Nuevo Contacto Alquilatupagina</h1>
-                                <img src='http://mitanash.com/images/others/logo.png'/>
+                                <img src='http://www.alquilatupaginaweb.com/img/logo-alquila.png'/>
                                     <p>Hola gracias por contactarnos</p>
                                     <p>En menos de 24 horas nos</p>
                                     <p>Comunicaremos contigo, gracias por confiar en nosotros.</p>
                                     <p>Estos son tus datos:</p>
                                     <p><strong>Contacto a nombre de:</strong> $nombre </p>
                                     <p><strong>Email:</strong> $email</p>
+                                    <p><strong>Telefono:</strong> $telefono</p>
                             </center>
                             </div>
                         </BODY>
@@ -103,7 +105,6 @@ class GuardarInformacion {
         $remitenteemail2 = "contacto@alquilatupaginaweb";
         $headers2 = "MIME-Version: 1.0\r\n";
         $headers2 .= "Content-type: text/html; charset=UTF-8\r\n";
-
 
         $smtp2 = new eSmtp("$SMTPservidor", $SMTPpuerto);
         $smtp2->setAuth("$SMTPusuario", "$SMTPclave");
@@ -138,11 +139,12 @@ class GuardarInformacion {
         
         $nombre = $_REQUEST["nombre"];
         $email = $_REQUEST["correo"];
+        $telefono = $_REQUEST["telefono"];
         $asunto = $_REQUEST["asunto"];
         $mensaje = $_REQUEST["mensaje"];
         
-        $sql = "INSERT INTO `contacto`(`nombre`, `correo`, `tipo_consulta`, `mensaje`)"
-                . "VALUES ('" . $_REQUEST["nombre"] . "','" . $_REQUEST["correo"] . "','" . $_REQUEST["asunto"] . "','" . $_REQUEST["mensaje"] . "');";
+        $sql = "INSERT INTO `contacto`(`nombre`, `correo`,`telefono`, `tipo_consulta`, `mensaje`)"
+                . "VALUES ('" . $nombre . "','" . $email . "','" . $telefono . "','" . $asunto . "','" . $mensaje . "');";
         $conn = new Conexion();
         $conn->conectar();
         try {
@@ -160,7 +162,7 @@ class GuardarInformacion {
         $SMTPclave = "6yhn7ujM";
         $SMTPpuerto = "25";
 
-        $destinatario = "cperez354@gmail.com";
+        $destinatario = "info@alquilatupaginaweb.com";
         $asunto = "Nuevo contacto alquila tu pagina";
         $body = "<html lang='es'>
                     <HEAD>
@@ -170,10 +172,11 @@ class GuardarInformacion {
                             <div>
                             <center>
                             <h1>Contacto Alquila tu pagina</h1>
-                                <img src='http://mitanash.com/images/others/logo.png'/>
+                                <img src='http://www.alquilatupaginaweb.com/img/logo-alquila.png'/>
                                     <p><strong>Contacto a nombre de:</strong> $nombre </p>
                                         <p><strong>Email:</strong> $email</p>
-                                            <p><strong>Ausnto:</strong> $asunto</p>
+                                            <p><strong>Telefono:</strong> $telefono</p>
+                                            <p><strong>Asunto:</strong> $asunto</p>
                                                 <p><strong>Mensaje:</strong> $mensaje</p>
                             </center>
                             </div>
@@ -212,13 +215,14 @@ class GuardarInformacion {
                             <div>
                             <center>
                             <h1>Nuevo Contacto Alquilatupagina</h1>
-                                <img src='http://mitanash.com/images/others/logo.png'/>
+                                <img src='http://www.alquilatupaginaweb.com/img/logo-alquila.png'/>
                                     <p>Hola gracias por contactarnos</p>
                                     <p>En menos de 24 horas nos</p>
                                     <p>Comunicaremos contigo, gracias por confiar en nosotros.</p>
                                     <p>Estos son tus datos:</p>
                                     <p><strong>Nombre:</strong> $nombre</p>
                                         <p><strong>Email:</strong> $email</p>
+                                            <p><strong>Telefono:</strong> $telefono</p>
                                             <p><strong>Ausnto:</strong> $asunto</p>
                                                 <p><strong>Mensaje:</strong> $mensaje</p>
                             </center>

@@ -12,8 +12,10 @@
 	$(window).scroll(function() {
 		if ($(".navbar").offset().top > 50) {
 			$(".navbar-fixed-top").addClass("top-nav-collapse");
+                        //$("#imageLogo").attr("src", "img/logoAbajo.png");
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
+                        //$("#imageLogo").attr("src", "img/logoalquila.png");
 		}
 	});
 

@@ -83,3 +83,14 @@
     background: transparent;
     
 }
+
+.logoImage{
+    
+    background-image: url(../img/logoalquila.png)
+    
+}
+
+.bgsection{
+background-image: url(../img/bg3.png);
+    
+}
