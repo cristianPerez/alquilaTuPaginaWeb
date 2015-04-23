@@ -722,23 +722,6 @@ Parallax
     margin-top: 0;
 }
 
-/*Scroll del formulario de contacto*/
-
-.form-scroll{
-  position: fixed;
-  top: 10px;
-  left: 250px;
-  z-index: 10000;
-}
-.form-scroll .inputForm{
-  width: 180px !important;
-  margin: 2px !important;
-}
-.form-scroll .btnNew{
-  width: 100px !important;
-  background: #FE495A;
-}
-
 
 /* Media queries */
 

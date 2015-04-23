@@ -26,6 +26,16 @@
         <link rel="stylesheet" type="text/css" href="css/componentclientes.css" />
         <script src="js/snap.svg-min.js"></script>
         <script src="js/modernizr.custom.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62184232-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
     </head>
 
@@ -68,7 +78,7 @@
             <div class="slogan">
                 <h2>Alquila tu página web</h2>
                 <h4><div class="texto-pagina">Encontrarás tu página ideal desde </div><div class='texto-pagina'> <div class="texto-precio">$40.000</div> pesos mensuales</div></h4>
-                <form id="formulario-scroll" method="GET" action="javascript:guardarContacto()">
+                <form method="GET" action="javascript:guardarContacto()">
                     <input class="inputForm" type="text" id="nombre" placeholder="Nombre" required=""/>
                     <input class="inputForm" type="email" id="email" placeholder="Déjanos tu email" required="">
                     <button type="submit" class="btnNew" id="btn-mensaje" role="button"  data-toggle="modal"><i class="fa fa-pencil pensil2" ></i>Regístrate Aquí</button>
@@ -555,16 +565,6 @@
         <script src="js/guardarInformacion.js"></script>
         <script src="js/grid.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            $(window).scroll(function(){ 
-                if ($(this).scrollTop() > 400){
-                   $("#formulario-scroll").addClass("form-scroll");
-                   $("#btn-mensaje").html('<i class="fa fa-pencil pensil2" ></i>Enviar');
-               }else{
-                    $("#formulario-scroll").removeClass("form-scroll");
-               }
-            });
-        </script>
         <script>
             $(function() {
                 Grid.init();
