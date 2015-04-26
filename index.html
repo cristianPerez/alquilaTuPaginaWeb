@@ -40,6 +40,16 @@
     </head>
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
         <!-- Preloader -->
 <header>
         <div id="preloader">
@@ -170,7 +180,6 @@
 
         </section>   
         
-        <!-- Section: clientes -->
         <section id="clientes" class="home-section text-center bgsection">
             <div class="heading-about">
                 <div class="container">
@@ -212,7 +221,6 @@
                 </div>
             </div>
         </section>
-        <!-- /Section: about -->
 
         <!-- Section: contact -->
         <section id="contact" class="home-section text-center bgsection">
@@ -319,9 +327,9 @@
                             <address>
                                 <strong>Estamos en redes sociales</strong><br>
                                 <ul class="company-social">
-                                    <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="social-facebook"><div class="fb-like" data-href="https://www.facebook.com/1401637196811413" data-width="300px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></li>
+                                    <!--<li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>-->
                                 </ul>   
                             </address>                  
 
@@ -354,9 +362,7 @@
     </section>
     <!-- /Section: contact -->
 
-    <!-- Modal servicios-->
-
-    <div class="modal fade pagina-web" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+     <div class="modal fade pagina-web" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div id="modalbackground"  >
      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="position: absolute;right: 10px;top: 10px;" aria-hidden="true">&times;</span></button>
