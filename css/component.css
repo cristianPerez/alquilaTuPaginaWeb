@@ -280,6 +280,12 @@
 	.grid a:nth-child(even) {
 		margin: 0;
 	}
+	.grid figcaption p {
+		margin-top: 200px;
+	}
+	.grid figcaption {
+	  top: -10px;
+	}
 }
 
 
