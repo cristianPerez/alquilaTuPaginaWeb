@@ -94,3 +94,9 @@
 background-image: url(../img/bg3.png);
     
 }
+
+#costumers a:hover{
+    
+    opacity: 0.7;
+    
+}
